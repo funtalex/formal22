@@ -1,10 +1,14 @@
-from src.nfa import Edge
-from src.fdfa import FDFA
+from src.nfa.nfa import Edge
+from src.fdfa.fdfa import FDFA
 
 
 class MFDFA(FDFA):
     def __init__(self, reg_exp):
-        super().__init__(reg_exp)
+        if isinstance(reg_exp, str):
+            super().__init__(reg_exp)
+        else:
+            self.assign(reg_exp)
+            self.sigma = reg_exp.sigma
         next_eq_classes = dict()
         next_cnt_classes = 2
         for state in self.states:
@@ -18,7 +22,7 @@ class MFDFA(FDFA):
         members_of_classes = dict()
 
         while prev_cnt_classes != next_cnt_classes:
-            prev_eq_classes = next_eq_classes
+            prev_eq_classes = next_eq_classes.copy()
             prev_cnt_classes = next_cnt_classes
             next_cnt_classes = 0
             members_of_classes = dict()

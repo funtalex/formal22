@@ -1,6 +1,6 @@
 import pytest
-from src.dfa import DFA
-from src.mfdfa import MFDFA
+from src.dfa.dfa import DFA
+from src.mfdfa.mfdfa import MFDFA
 
 
 @pytest.mark.parametrize('reg_exp, words', [('(a+b)*b(a+1)b(a+b)*', ['bb', 'abbba', 'bbababaa', 'bba']),

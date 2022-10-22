@@ -1,7 +1,7 @@
-from src.nfa1 import NFA1
-from src.nfa import Edge
+from src.nfa1.nfa1 import NFA1
+from src.nfa.nfa import Edge
 from queue import Queue
-from src.nfa import EPS
+from src.nfa.nfa import EPS
 
 
 class DFA(NFA1):

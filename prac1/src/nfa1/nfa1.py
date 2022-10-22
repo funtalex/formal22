@@ -1,6 +1,6 @@
-from src.nfa import EPS
-from src.nfa import Edge
-from src.nfa01 import NFA01
+from src.nfa.nfa import EPS
+from src.nfa.nfa import Edge
+from src.nfa01.nfa01 import NFA01
 
 
 class NFA1(NFA01):

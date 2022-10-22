@@ -1,5 +1,5 @@
-from src.dfa import DFA
-from src.nfa import Edge
+from src.dfa.dfa import DFA
+from src.nfa.nfa import Edge
 
 
 class FDFA(DFA):

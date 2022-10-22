@@ -1,6 +1,6 @@
 import pytest
-from src.nfa import NFA
-from src.nfa import Edge
+from src.nfa.nfa import NFA
+from src.nfa.nfa import Edge
 
 
 @pytest.mark.parametrize('to_state, from_state, word', [('0', '1', ''), ('0', '0', 'a'),

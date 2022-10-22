@@ -1,7 +1,7 @@
 import pytest
-from src.nfa import NFA
-from src.dfa import DFA
-from src.mfdfa import MFDFA
+from src.nfa.nfa import NFA
+from src.dfa.dfa import DFA
+from src.mfdfa.mfdfa import MFDFA
 
 
 @pytest.mark.parametrize('reg_exp', ['(a+b)*b(a+1)b(a+b)*', 'ac(a+b)*+b*ac'])

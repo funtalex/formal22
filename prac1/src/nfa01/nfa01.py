@@ -1,5 +1,5 @@
-from src.nfa import Edge
-from src.nfa import NFA
+from src.nfa.nfa import Edge
+from src.nfa.nfa import NFA
 
 
 class NFA01(NFA):
