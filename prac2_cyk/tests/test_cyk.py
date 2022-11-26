@@ -42,5 +42,5 @@ def test_contains(grammar, word):
                                            (grammar_psp, '()(()('), (grammar_psp, ')()()('),
                                            (grammar_word, ''), (grammar_word, 'bbcaa'), (grammar_word, 'aaaaaabbbbb'),
                                            (grammar_word, 'acaba'), (grammar_word, 'aacaa')])
-def test_contains(grammar, word):
+def test_not_contains(grammar, word):
     assert not cyk(grammar, word)
